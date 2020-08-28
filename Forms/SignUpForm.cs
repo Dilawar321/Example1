@@ -30,7 +30,7 @@ namespace Example.Forms
             // if change is successful
             successfulForm.Show();
             // if change is not successful
-           // failedForm.Show();
+            failedForm.Show();
         }
     }
 }
