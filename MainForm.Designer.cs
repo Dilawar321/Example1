@@ -28,73 +28,74 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.AdminButton = new System.Windows.Forms.Button();
-            this.CustomerButton = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
+            this.btnCustomer = new System.Windows.Forms.Button();
+            this.lblSmartCatalogue = new System.Windows.Forms.Label();
+            this.btnAdmin = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // AdminButton
+            // btnCustomer
             // 
-            this.AdminButton.Location = new System.Drawing.Point(323, 232);
-            this.AdminButton.Name = "AdminButton";
-            this.AdminButton.Size = new System.Drawing.Size(189, 41);
-            this.AdminButton.TabIndex = 0;
-            this.AdminButton.Text = "Admin";
-            this.AdminButton.UseVisualStyleBackColor = true;
-            this.AdminButton.Click += new System.EventHandler(this.AdminButton_Click);
+            this.btnCustomer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.btnCustomer.FlatAppearance.BorderSize = 0;
+            this.btnCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCustomer.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold);
+            this.btnCustomer.ForeColor = System.Drawing.Color.LightGray;
+            this.btnCustomer.Location = new System.Drawing.Point(374, 274);
+            this.btnCustomer.Name = "btnCustomer";
+            this.btnCustomer.Size = new System.Drawing.Size(115, 41);
+            this.btnCustomer.TabIndex = 1;
+            this.btnCustomer.Text = "Customer";
+            this.btnCustomer.UseVisualStyleBackColor = false;
+            this.btnCustomer.Click += new System.EventHandler(this.CustomerButton_Click);
             // 
-            // CustomerButton
+            // lblSmartCatalogue
             // 
-            this.CustomerButton.Location = new System.Drawing.Point(323, 288);
-            this.CustomerButton.Name = "CustomerButton";
-            this.CustomerButton.Size = new System.Drawing.Size(189, 41);
-            this.CustomerButton.TabIndex = 1;
-            this.CustomerButton.Text = "Customer";
-            this.CustomerButton.UseVisualStyleBackColor = true;
-            this.CustomerButton.Click += new System.EventHandler(this.CustomerButton_Click);
+            this.lblSmartCatalogue.AutoSize = true;
+            this.lblSmartCatalogue.BackColor = System.Drawing.Color.Transparent;
+            this.lblSmartCatalogue.Font = new System.Drawing.Font("Viner Hand ITC", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSmartCatalogue.ForeColor = System.Drawing.Color.White;
+            this.lblSmartCatalogue.Location = new System.Drawing.Point(216, 96);
+            this.lblSmartCatalogue.Name = "lblSmartCatalogue";
+            this.lblSmartCatalogue.Size = new System.Drawing.Size(438, 78);
+            this.lblSmartCatalogue.TabIndex = 2;
+            this.lblSmartCatalogue.Text = "Smart Catalogue";
+            this.lblSmartCatalogue.Click += new System.EventHandler(this.label1_Click);
             // 
-            // panel1
+            // btnAdmin
             // 
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(-7, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(806, 223);
-            this.panel1.TabIndex = 2;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(56, 64);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(682, 55);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Smart Calaogue Logo Picture";
+            this.btnAdmin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.btnAdmin.FlatAppearance.BorderSize = 0;
+            this.btnAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdmin.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdmin.ForeColor = System.Drawing.Color.LightGray;
+            this.btnAdmin.Location = new System.Drawing.Point(374, 215);
+            this.btnAdmin.Name = "btnAdmin";
+            this.btnAdmin.Size = new System.Drawing.Size(115, 41);
+            this.btnAdmin.TabIndex = 0;
+            this.btnAdmin.Text = "Admin";
+            this.btnAdmin.UseVisualStyleBackColor = false;
+            this.btnAdmin.Click += new System.EventHandler(this.AdminButton_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
             this.ClientSize = new System.Drawing.Size(811, 425);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.CustomerButton);
-            this.Controls.Add(this.AdminButton);
+            this.Controls.Add(this.lblSmartCatalogue);
+            this.Controls.Add(this.btnCustomer);
+            this.Controls.Add(this.btnAdmin);
             this.Name = "MainForm";
             this.Text = "MainForm";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button AdminButton;
-        private System.Windows.Forms.Button CustomerButton;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnCustomer;
+        private System.Windows.Forms.Label lblSmartCatalogue;
+        private System.Windows.Forms.Button btnAdmin;
     }
 }
 

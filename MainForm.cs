@@ -31,5 +31,10 @@ namespace Example
             CustomerForm1 customerForm1 = new CustomerForm1();
             customerForm1.Show();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
